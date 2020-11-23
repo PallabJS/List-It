@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registrations </title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgb(145, 59, 145);
+            box-shadow: 0px 0px 10px 5px rgb(172, 199, 238);
+            padding: 5px;
+            padding-top: 0;
+            border-radius: 5px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        h1 {
+            padding: 10px;
+            flex: 0.7;
+            font-size: 16pt;
+            color: white;
+        }
+
+        input {
+            margin: 0 2px;
+            padding: 10px;
+            flex: 0.15 !important;
+            font-size: 12pt;
+            border: none;
+            border-radius: 5px;
+            z-index: 1;
+            box-shadow: 0 0 1px 1px black;
+        }
+
+        input[id='clear'] {
+            background-color: rgb(227, 12, 12);
+            color: white;
+        }
+
+        ol {
+            display: block;
+            padding: 30px 50px;
+            font-size: 16pt;
+            background-color: rgb(226, 242, 245);
+            height: 400px;
+            overflow: scroll;
+            z-index: 0;
+        }
+
+        ol::-webkit-scrollbar {
+            display: none;
+        }
+
+        .list_item {
+            margin-top: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .name {
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Notes </h1>
+            <input id="textinput" type="text" placeholder="Add a note...">
+            <input id="add" type="button" value="Add One">
+            <input id="clear" type="button" value="Clear all">
+        </div>
+        <ol>
+        </ol>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
